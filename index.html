@@ -1,14 +1,48 @@
-```html
 <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Mis on project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minu projekt</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Tere!</h1>
+    <header>
+        <h1>Tere tulemast minu projekti</h1>
+        <nav>
+            <a href="#">Avaleht</a>
+            <a href="#">Teenused</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projektist</h2>
+            <p>See on lihtne HTML leht projekti jaoks.</p>
+        </section>
+
+        <section>
+            <h2>Funktsioonid</h2>
+            <ul>
+                <li>Lihtne disain</li>
+                <li>Kiire laadimine</li>
+                <li>Kerge muuta</li>
+            </ul>
+        </section>
+
+        <button onclick="showMessage()">Vajuta mind</button>
+    </main>
+
+    <footer>
+        <p>© 2026 Minu projekt</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-```
