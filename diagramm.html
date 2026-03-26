@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Project – Diagrammide loomine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Microsoft Project – Diagrammide loomine</h1>
+    <p>Juhend: kuidas luua ja kohandada diagramme Projectis</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Uue kalendri loomine</a></li>
+      <li><a href="valem.html">Arvutusvälja lisamine</a></li>
+      <li><a href="diagramm.html" class="active">Diagrammide loomine</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>1. Ava View menüü</h2>
+      <p>Projekti avamisel klõpsa ülaribalt „View" (Vaade). Siin on kõik saadaval olevad vaated ja diagrammitüübid, sh Gantt Chart, Network Diagram ja Resource Graph.</p>
+      <figure>
+        <img src="diagram/1.png" alt="View menüü avamine" />
+        <figcaption>// View menüü ülaribalt</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>2. Vali Gantt Chart</h2>
+      <p>Klõpsa „Gantt Chart" – see on kõige levinum projektijuhtimise diagramm, kus ülesanded kuvatakse ajajoonel horisontaalsete ribadena.</p>
+      <figure>
+        <img src="diagram/2.png" alt="Gantt Chart valimine" />
+        <figcaption>// Gantt Chart valik menüüs</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>3. Kohanda Gantt ribasid</h2>
+      <p>Paremklõpsa Gantti ribal → „Format Bar" (Vorminda riba). Saad muuta riba värvi, kuju ja teksti, mis kuvab riba peal või kõrval.</p>
+      <figure>
+        <img src="diagram/3.png" alt="Format Bar dialoog" />
+        <figcaption>// Format Bar kohandamise aken</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>4. Lisa verstapostid (Milestones)</h2>
+      <p>Verstapost on nullkestusega ülesanne – see kuvatakse Ganttis teemandi kujul. Loo ülesanne, määra kestuseks „0 days" ja see muutub automaatselt verstapostiks.</p>
+      <figure>
+        <img src="diagram/4.png" alt="Milestone lisamine" />
+        <figcaption>// Milestone teemandi kuvamine</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>5. Ava Network Diagram</h2>
+      <p>View → „Network Diagram". See kuvab ülesanded kastidena ja nende vahelised sõltuvused nooltena – sobib kriitilise tee analüüsiks.</p>
+      <figure>
+        <img src="diagram/5.png" alt="Network Diagram" />
+        <figcaption>// Network Diagram vaade</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>6. Kuva kriitiline tee</h2>
+      <p>Gantt Chart vaates: „Format" → lülita sisse „Critical Tasks". Kriitilised ülesanded (mis mõjutavad projekti lõppkuupäeva) värvitakse punaseks.</p>
+      <figure>
+        <img src="diagram/6.png" alt="Kriitilise tee kuvamine" />
+        <figcaption>// Kritilised ülesanded punasena</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>7. Prindi diagramm</h2>
+      <p>File → Print → „Page Setup". Siin saad seadistada lehe orientatsiooni, mõõtkava ja millised veerud trükitakse koos Gantiga.</p>
+      <figure>
+        <img src="diagram/7.png" alt="Printimise seadistamine" />
+        <figcaption>// Page Setup printimiseks</figcaption>
+      </figure>
+    </section>
+    </main>
+  <footer>
+    <p>Koostanud: <strong>Mark Jurgen</strong> | Kursus: TARpv24</p>
+  </footer>
+</body>
+</html>
