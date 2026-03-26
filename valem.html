@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Project – Arvutusvälja lisamine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Microsoft Project – Arvutusvälja lisamine</h1>
+    <p>Juhend: kuidas luua ja kasutada arvutusvälja projektis</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Uue kalendri loomine</a></li>
+      <li><a href="valem.html" class="active">Arvutusvälja lisamine</a></li>
+      <li><a href="diagramm.html">Diagrammide loomine</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>1. Ava väljahaldus</h2>
+      <p>Projekti vaates paremklõpsa veeru päisel ja vali „Custom Fields" (Kohandatud väljad), et avada väljade haldamise aken.</p>
+      <figure>
+        <img src="arvutus/1.png" alt="Custom Fields avamine" />
+        <figcaption>// Custom Fields dialoog</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>2. Vali välja tüüp</h2>
+      <p>Vali rippmenüüst sobiv välja tüüp – näiteks „Number" (arv) või „Cost" (kulu). Seejärel vajuta „Rename", et anda väljale mõistlik nimi.</p>
+      <figure>
+        <img src="arvutus/2.png" alt="Välja tüübi valimine" />
+        <figcaption>// Number või Cost välja valimine</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>3. Loo valem</h2>
+      <p>Vajuta nuppu „Formula" (Valem). Avaneb valemiredaktor, kus saad kasutada MS Projecti sisseehitatud funktsioone ja välju.</p>
+      <figure>
+        <img src="arvutus/3.png" alt="Formula redaktor" />
+        <figcaption>// Formula redaktori aken</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>4. Sisesta valem</h2>
+      <p>Kirjuta valem käsitsi või kasuta „Field" ja „Function" nuppe. Näiteks kulu ja kestuse suhtarvu arvutamiseks: <code>[Cost] / [Duration]</code></p>
+      <figure>
+        <img src="arvutus/4.png" alt="Valemi sisestamine" />
+        <figcaption>// Näidisvalem kulu ja kestuse jaoks</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>5. Kinnita valem</h2>
+      <p>Vajuta „OK" ja seejärel uuesti „OK" Custom Fields aknas. Project kontrollib automaatselt valemit – kui on vigu, kuvatakse veateade.</p>
+      <figure>
+        <img src="arvutus/4.png" alt="Valemi kinnitamine" />
+        <figcaption>// OK vajutamine valemi salvestamiseks</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>6. Lisa veerg tabelisse</h2>
+      <p>Paremklõpsa mõnel veerupäisel → „Insert Column" → otsi oma kohandatud välja nimi. Veerg ilmub tabelisse automaatselt arvutatud väärtustega.</p>
+      <figure>
+        <img src="arvutus/5.png" alt="Veeru lisamine tabelisse" />
+        <figcaption>// Insert Column dialoog</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>7. Kontrolli tulemust</h2>
+      <p>Vaata, et kõikidel ülesannetel oleks uues veerus arvutatud väärtus.</p>
+      <figure>
+        <img src="arvutus/7.png" alt="Arvutusvälja tulemus" />
+        <figcaption>// Arvutusvälja väärtused tabelis</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Koostanud: <strong>Mark Jurgen</strong> | Kursus: TARpv24</p>
+  </footer>
+</body>
+</html>
