@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Microsoft Project – Diagrammide loomine</h1>
-    <p>Juhend: kuidas luua ja kohandada diagramme Projectis</p>
+    <p>Juhend: kuidas luua ja kohandada Project Overview aruannet</p>
   </header>
 
   <nav>
@@ -21,69 +21,76 @@
   </nav>
 
   <main>
+
     <section>
-      <h2>1. Ava View menüü</h2>
-      <p>Projekti avamisel klõpsa ülaribalt „View" (Vaade). Siin on kõik saadaval olevad vaated ja diagrammitüübid, sh Gantt Chart, Network Diagram ja Resource Graph.</p>
+      <h2>1. Ava Report menüü</h2>
+      <p>
+        Klõpsa ülaribalt vahekaarti <strong>Report</strong>. Siin asuvad kõik MS Projecti
+        sisseehitatud aruanded, sh „Project Overview", „Cost Overview" ja „Work Overview".
+      </p>
       <figure>
-        <img src="diagram/1.png" alt="View menüü avamine" />
-        <figcaption>// View menüü ülaribalt</figcaption>
+        <img src="diagram/1.png" alt="Report menüü avamine" />
+        <figcaption>// Report vahekaart ülaribalt</figcaption>
       </figure>
     </section>
 
     <section>
-      <h2>2. Vali Gantt Chart</h2>
-      <p>Klõpsa „Gantt Chart" – see on kõige levinum projektijuhtimise diagramm, kus ülesanded kuvatakse ajajoonel horisontaalsete ribadena.</p>
+      <h2>2. Vali Project Overview</h2>
+      <p>
+        Klõpsa <strong>Dashboards → Project Overview</strong>. Aruanne avaneb uues vaates
+        ja kuvab automaatselt projekti edenemise, verstapostid ja hilinenud ülesanded.
+      </p>
       <figure>
-        <img src="diagram/2.png" alt="Gantt Chart valimine" />
-        <figcaption>// Gantt Chart valik menüüs</figcaption>
+        <img src="diagram/2.png" alt="Project Overview valimine" />
+        <figcaption>// Dashboards → Project Overview</figcaption>
       </figure>
     </section>
 
     <section>
-      <h2>3. Kohanda Gantt ribasid</h2>
-      <p>Paremklõpsa Gantti ribal → „Format Bar" (Vorminda riba). Saad muuta riba värvi, kuju ja teksti, mis kuvab riba peal või kõrval.</p>
+      <h2>3. Project Overview ülevaade</h2>
+      <p>
+        Aruanne sisaldab nelja peamist osa:
+      </p>
+      <ul>
+        <li><strong>% Complete</strong> – projekti üldine valmisolekuprotsent (suur oranž number)</li>
+        <li><strong>Milestones Due</strong> – lähenevad verstapostid koos tähtaegadega</li>
+        <li><strong>% Complete diagramm</strong> – tulpdiagramm kõikide tippülesannete kaupa</li>
+        <li><strong>Late Tasks</strong> – tabel hilinenud ülesannetest</li>
+      </ul>
       <figure>
-        <img src="diagram/3.png" alt="Format Bar dialoog" />
-        <figcaption>// Format Bar kohandamise aken</figcaption>
+        <img src="diagram/3.png" alt="Project Overview ülevaade" />
+        <figcaption>// Project Overview täisvaade</figcaption>
       </figure>
     </section>
 
     <section>
-      <h2>4. Lisa verstapostid (Milestones)</h2>
-      <p>Verstapost on nullkestusega ülesanne – see kuvatakse Ganttis teemandi kujul. Loo ülesanne, määra kestuseks „0 days" ja see muutub automaatselt verstapostiks.</p>
+      <h2>4. Kohanda diagrammi värve</h2>
+      <p>
+        Klõpsa tulpdiagrammil → ilmub paremal <strong>Chart Tools</strong> riba.
+        Vali <strong>Design → Change Colors</strong>, et muuta tulpade värvipaletti.
+        Konkreetse tulpa värvi muutmiseks topeltklõpsa sellel ja vali „Format Data Point".
+      </p>
       <figure>
-        <img src="diagram/4.png" alt="Milestone lisamine" />
-        <figcaption>// Milestone teemandi kuvamine</figcaption>
+        <img src="diagram/4.png" alt="Diagrammi värvide muutmine" />
+        <figcaption>// Chart Tools → Change Colors</figcaption>
       </figure>
     </section>
 
     <section>
-      <h2>5. Ava Network Diagram</h2>
-      <p>View → „Network Diagram". See kuvab ülesanded kastidena ja nende vahelised sõltuvused nooltena – sobib kriitilise tee analüüsiks.</p>
+      <h2>5. Lõpptulemus</h2>
+      <p>
+        Valmis Project Overview aruanne: projekti valmisolekuprotsent, tulpdiagramm
+        kõikide faasidega, verstapostide tabel ja hilinenud ülesannete nimekiri –
+        kõik ühes vaates automaatselt uuenemas.
+      </p>
       <figure>
-        <img src="diagram/5.png" alt="Network Diagram" />
-        <figcaption>// Network Diagram vaade</figcaption>
+        <img src="diagram/5.png" alt="Lõpptulemus – Project Overview" />
+        <figcaption>// Valmis Project Overview diagramm</figcaption>
       </figure>
     </section>
 
-    <section>
-      <h2>6. Kuva kriitiline tee</h2>
-      <p>Gantt Chart vaates: „Format" → lülita sisse „Critical Tasks". Kriitilised ülesanded (mis mõjutavad projekti lõppkuupäeva) värvitakse punaseks.</p>
-      <figure>
-        <img src="diagram/6.png" alt="Kriitilise tee kuvamine" />
-        <figcaption>// Kritilised ülesanded punasena</figcaption>
-      </figure>
-    </section>
+  </main>
 
-    <section>
-      <h2>7. Prindi diagramm</h2>
-      <p>File → Print → „Page Setup". Siin saad seadistada lehe orientatsiooni, mõõtkava ja millised veerud trükitakse koos Gantiga.</p>
-      <figure>
-        <img src="diagram/7.png" alt="Printimise seadistamine" />
-        <figcaption>// Page Setup printimiseks</figcaption>
-      </figure>
-    </section>
-    </main>
   <footer>
     <p>Koostanud: <strong>Mark Jurgen</strong> | Kursus: TARpv24</p>
   </footer>
